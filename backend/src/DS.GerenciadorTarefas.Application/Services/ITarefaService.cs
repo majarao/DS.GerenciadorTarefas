@@ -1,4 +1,5 @@
 ﻿using DS.GerenciadorTarefas.Application.Models;
+using DS.GerenciadorTarefas.Domain.Entities;
 using DS.GerenciadorTarefas.Domain.Enum;
 
 namespace DS.GerenciadorTarefas.Application.Services;
@@ -13,4 +14,5 @@ public interface ITarefaService
     public Task<bool> DeleteAsync(int id);
     public Task<TarefaResultModel?> IniciarTarefaAsync(int id);
     public Task<TarefaResultModel?> ConcluirTarefaAsync(int id);
+    public TarefaResultModel ToResultModel(Tarefa tarefa);
 }

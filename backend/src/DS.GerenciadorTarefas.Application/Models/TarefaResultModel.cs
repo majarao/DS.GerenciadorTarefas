@@ -4,6 +4,6 @@ public record TarefaResultModel(
     int Id,
     string Titulo,
     string? Descricao,
-    DateTime DataCriacao,
-    DateTime? DataConclusao,
-    int Status);
+    string DataCriacao,
+    string? DataConclusao,
+    string Status);

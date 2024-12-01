@@ -1,3 +1,4 @@
+using DS.GerenciadorTarefas.API.Middlewares;
 using DS.GerenciadorTarefas.Application;
 using DS.GerenciadorTarefas.Infra;
 
@@ -21,5 +22,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 app.MapControllers();
+
+app.UseCors(p => p.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+
+app.UseExceptionMiddleware();
 
 app.Run();

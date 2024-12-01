@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DS.GerenciadorTarefas.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/tarefas")]
 [ApiController]
 public class TarefasController(ITarefaService tarefaService) : ControllerBase
 {
