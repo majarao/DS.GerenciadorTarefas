@@ -29,6 +29,10 @@ E executar o comando abaixo no seu terminal
 
     dotnet run
 
+É preciso ter o SDK do .Net instaldo, instruções podem ser encontradados no link abaixo
+
+    https://dotnet.microsoft.com/en-us/download
+
 Através do recurso "Migrations" do .Net o banco já será criado, assim como toda a definição de tabela
 
 O frontend foi desenvolvido utilizando ReactJs
