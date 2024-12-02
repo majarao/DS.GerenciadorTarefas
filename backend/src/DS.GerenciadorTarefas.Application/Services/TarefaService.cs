@@ -36,7 +36,7 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
 
     public async Task<TarefaResultModel> CreateAsync(TarefaInputModel tarefaModel)
     {
-        Tarefa tarefa = new(tarefaModel.Titulo);
+        Tarefa tarefa = new(tarefaModel.Titulo, tarefaModel.Descricao);
         await Repository.CreateAsync(tarefa);
         return ToResultModel(tarefa);
     }
@@ -83,7 +83,7 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
         if (tarefa.Id != id)
             return null;
 
-        tarefa.ConcluirTarefa();
+        tarefa.ConcluirTarefa(null);
         await Repository.UpdateAsync(id, tarefa);
         return ToResultModel(tarefa);
     }

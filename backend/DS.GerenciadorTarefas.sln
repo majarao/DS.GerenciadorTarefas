@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.GerenciadorTarefas.Infra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.GerenciadorTarefas.API", "src\DS.GerenciadorTarefas.API\DS.GerenciadorTarefas.API.csproj", "{FE5F1A7C-E62F-4897-9034-9FD655CA7A2A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{362B125C-8E10-4035-BF92-D0AAF9D79687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.GerenciadorTarefas.Domain.Test", "test\DS.GerenciadorTarefas.Domain.Test\DS.GerenciadorTarefas.Domain.Test.csproj", "{88ED8C7C-09FE-4C88-92EE-3CDAF6C39768}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{FE5F1A7C-E62F-4897-9034-9FD655CA7A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE5F1A7C-E62F-4897-9034-9FD655CA7A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5F1A7C-E62F-4897-9034-9FD655CA7A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88ED8C7C-09FE-4C88-92EE-3CDAF6C39768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ED8C7C-09FE-4C88-92EE-3CDAF6C39768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ED8C7C-09FE-4C88-92EE-3CDAF6C39768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ED8C7C-09FE-4C88-92EE-3CDAF6C39768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +52,6 @@ Global
 		{A1641F6F-5FFD-4D84-A2A0-902AE4892F9A} = {3E75389B-C30E-4923-A174-2F070889069F}
 		{8542FA1F-C325-453E-8AA4-E670D6DFB7BE} = {3E75389B-C30E-4923-A174-2F070889069F}
 		{FE5F1A7C-E62F-4897-9034-9FD655CA7A2A} = {3E75389B-C30E-4923-A174-2F070889069F}
+		{88ED8C7C-09FE-4C88-92EE-3CDAF6C39768} = {362B125C-8E10-4035-BF92-D0AAF9D79687}
 	EndGlobalSection
 EndGlobal

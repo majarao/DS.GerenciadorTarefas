@@ -7,9 +7,10 @@ public class Tarefa
 {
     protected Tarefa() { }
 
-    public Tarefa(string titulo)
+    public Tarefa(string titulo, string? descricao)
     {
         Titulo = titulo;
+        Descricao = descricao;
         Status = Status.Pendente;
         DataCriacao = DateTime.UtcNow;
 
@@ -35,10 +36,10 @@ public class Tarefa
         ValidaTarefa();
     }
 
-    public void ConcluirTarefa()
+    public void ConcluirTarefa(DateTime? dataConclusao)
     {
         Status = Status.Concluida;
-        DataConclusao = DateTime.UtcNow;
+        DataConclusao = dataConclusao ?? DateTime.UtcNow;
 
         ValidaTarefa();
     }

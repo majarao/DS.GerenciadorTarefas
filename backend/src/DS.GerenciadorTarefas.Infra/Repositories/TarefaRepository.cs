@@ -75,7 +75,7 @@ internal class TarefaRepository(IUnitOfWork unitOfWork) : ITarefaRepository
 
         if (tarefa is not null)
         {
-            tarefa.ConcluirTarefa();
+            tarefa.ConcluirTarefa(null);
             UnitOfWork.Context.Update(tarefa);
             await UnitOfWork.Context.SaveChangesAsync();
 
