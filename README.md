@@ -4,8 +4,11 @@
 Aplicação para gerenciar tarefas
 
 API foi construída utilizando .Net Core 9
+
 Banco de dados SQL Server 2022
+
 Entity Framework para acesso e manipulação de dados
+
 A arquitetura do projeto foi utilizando Arquitetura Limpa, com responsabilidades e escopo bem definidos
 
 Para rodar a API, primeiro precisa provisionar um banco de dados SQL   Server, isso pode ser feito com Docker, subindo um container  utilizando o comando abaixo
