@@ -49,6 +49,10 @@ E digite o seguinte comando no terminal
 
     https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
 
+Será preciso instalar o vite para executar o frontend, ele pode ser instalado rodando o comando no terminal
+
+    npm install vite
+
 A API também está dotada de testes de unidade para a camada de domínio, para executar os testes, você deve acessar a pasta
 
 > *.\backend\test\DS.GerenciadorTarefas.Domain.Test*
