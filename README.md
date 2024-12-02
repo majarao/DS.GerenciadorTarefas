@@ -1,7 +1,7 @@
 
 # Gerenciador de Tarefas
 
-Aplicação para gerenciar de tarefas
+Aplicação para gerenciar tarefas
 
 API foi construída utilizando .Net Core 9
 Banco de dados SQL Server 2022
