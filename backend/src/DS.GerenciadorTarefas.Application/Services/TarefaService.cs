@@ -14,7 +14,7 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
     {
         Tarefa? tarefa = await Repository.GetByIdAsync(id);
 
-        if (tarefa == null)
+        if (tarefa is null)
             return null;
 
         return ToResultModel(tarefa);
@@ -24,14 +24,14 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
     {
         List<Tarefa>? tarefas = await Repository.GetAllAsync();
 
-        return tarefas?.Select(t => ToResultModel(t)).ToList();
+        return tarefas?.Select(ToResultModel).ToList();
     }
 
     public async Task<List<TarefaResultModel>?> GetAllByStatusAsync(Status status)
     {
         List<Tarefa>? tarefas = await Repository.GetAllByStatusAsync(status);
 
-        return tarefas?.Select(t => ToResultModel(t)).ToList();
+        return tarefas?.Select(ToResultModel).ToList();
     }
 
     public async Task<TarefaResultModel> CreateAsync(TarefaInputModel tarefaModel)
@@ -45,10 +45,7 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
     {
         Tarefa? tarefa = await Repository.GetByIdAsync(id);
 
-        if (tarefa == null)
-            return null;
-
-        if (tarefa.Id != id)
+        if (tarefa is null)
             return null;
 
         tarefa.AtualizarTarefa(tarefaModel.Titulo, tarefaModel.Descricao);
@@ -62,10 +59,7 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
     {
         Tarefa? tarefa = await Repository.GetByIdAsync(id);
 
-        if (tarefa == null)
-            return null;
-
-        if (tarefa.Id != id)
+        if (tarefa is null)
             return null;
 
         tarefa.IniciarTarefa();
@@ -77,10 +71,7 @@ public class TarefaService(ITarefaRepository repository) : ITarefaService
     {
         Tarefa? tarefa = await Repository.GetByIdAsync(id);
 
-        if (tarefa == null)
-            return null;
-
-        if (tarefa.Id != id)
+        if (tarefa is null)
             return null;
 
         tarefa.ConcluirTarefa(null);

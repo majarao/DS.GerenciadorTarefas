@@ -1,6 +1,6 @@
 ﻿using DS.GerenciadorTarefas.Domain.Entities;
-using DS.GerenciadorTarefas.Domain.Exceptions;
 using DS.GerenciadorTarefas.Domain.Enum;
+using DS.GerenciadorTarefas.Domain.Exceptions;
 
 namespace DS.GerenciadorTarefas.Domain.Test;
 
